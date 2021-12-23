@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,20 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <title>Skills</title>
 </head>
+
 <body>
-  <h1>Skill #<%= skillNum %></h1>
-  <h3><%= skill.skill %></h3>
-  <h3>ability: <%= skill.ability ? 'Exceptional' : 'Good' %></h3>
-  <form action="/skills/<%= skill.id %>?_method=DELETE"
-    class="delete-form" method="POST">
+  <h1>Skill #<%= skillNum %>
+  </h1>
+  <h3>
+    <%= skill.skill %>
+  </h3>
+  <h3>ability: <%= skill.ability ? 'Exceptional' : 'Good' %>
+  </h3>
+  <form action="/skills/<%= skill.id %>?_method=DELETE" class="delete-form" method="POST">
     <button type="submit">Delete Skill</button>
   </form>
+  <!-- <a href="/skills/<%= skill.id %>/edit">Edit Skill</a> -->
+  </form>
 </body>
+
 </html>
